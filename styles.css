@@ -1,0 +1,99 @@
+*{
+margin: 0;
+padding: 0;
+font-family:'poppins',sans-serif; 
+box-sizing: border-box;   
+}
+
+.container{
+    width: 100%;
+height: 110vh;
+background: #e3f9ff;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.calculator{
+    background: #3a4452;
+    padding:20px;
+border-radius:10px;    
+}
+
+.calculator form input{
+    border:0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow:-8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0;
+}
+
+form .display input{
+
+text-align: right;
+flex: 1;
+font-size: 45px;
+box-shadow: none;
+}
+
+form input.equal{
+    width: 145px;
+}
+
+
+form input.operator{
+color:#33ffd8;
+}
+
+.footer{
+    color:black;
+    background: #e3f9ff;  
+    text-align: right;
+    padding:3px;
+font-size: 20px;
+height:200x;
+box-sizing: border-box;
+    border-radius: 15px 2px 15px 0px;
+}
+
+
+/* Add this CSS to your stylesheet (styles.css) */
+
+/* Keyframes for the pop-up effect */
+@keyframes popup {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Add a class for the pop-up animation */
+.pop-effect {
+  animation: popup 0.3s ease-in-out;
+}
+
+/* Ensure the display text remains large */
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 55px; /* Increased for better readability */
+  box-shadow: none;
+  color: #fff;
+}
